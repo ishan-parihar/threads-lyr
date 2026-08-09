@@ -1,0 +1,42 @@
+{
+  "manifest_version": "0.4",
+  "name": "threads-mcp-server",
+  "display_name": "Threads.net MCP Server",
+  "version": "0.1.0",
+  "description": "Connect Claude to public Threads.net profiles and threads via anonymous scraping — no login required",
+  "long_description": "# Threads.net MCP Server\n\nConnect Claude to public Threads.net profiles and recent threads with an MCP server backed by anonymous scraping (no cookies, no login). Reads only — publishing requires the official Threads API.\n\n## Quick start\n\n1. Install: `install.sh` (or `uv sync`)\n2. Try it: `threads-lyr get_threads_profile --username zuck`\n3. Start the MCP server: `threads-lyr`\n",
+  "author": {
+    "name": "Ishan Parihar",
+    "url": "https://github.com/ishan-parihar/threads-lyr"
+  },
+  "homepage": "https://github.com/ishan-parihar/threads-lyr",
+  "documentation": "https://github.com/ishan-parihar/threads-lyr#readme",
+  "license": "MIT",
+  "keywords": [
+    "threads",
+    "threadsnet",
+    "mcp",
+    "scraping",
+    "social-media"
+  ],
+  "tools": [
+    {
+      "name": "get_threads_profile",
+      "description": "Get a public Threads profile"
+    },
+    {
+      "name": "get_user_threads",
+      "description": "Get recent public threads"
+    },
+    {
+      "name": "close_session",
+      "description": "Close active scrape clients"
+    }
+  ],
+  "capabilities": {
+    "tools": {
+      "listChanged": false
+    }
+  },
+  "transport": "stdio"
+}

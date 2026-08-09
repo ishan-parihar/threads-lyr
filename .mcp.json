@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "threads": {
+      "command": "uv",
+      "args": ["run", "--project", "${__dirname}", "-m", "threads_mcp_server"]
+    }
+  }
+}
