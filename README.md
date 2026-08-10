@@ -2,6 +2,7 @@
 <!-- T2I HERO SPEC — Subject: a Threads data engine — a threaded conversation strand (spiral threads) feeding posts through a pipeline into structured JSON for agents. Composition: thread helix → extraction → JSON cards. Palette: threads off-white #111111 / #f5f5f4 → dark slate → accent purple. Style: dark flat vector, helix motif, no text. 16:9. -->
 <p align="center">
   <img src="https://img.shields.io/badge/python-3.11+-2b6cb0?style=flat&logo=python&logoColor=white" alt="Python 3.11+">
+[![CI](https://github.com/ishan-parihar/threads-lyr/actions/workflows/ci.yml/badge.svg)](https://github.com/ishan-parihar/threads-lyr/actions/workflows/ci.yml)
   <img src="https://img.shields.io/badge/uv-0.6%2B-7c3aed?style=flat&logo=astral&logoColor=white" alt="uv">
   <img src="https://img.shields.io/badge/license-MIT-059669?style=flat" alt="MIT">
 </p>
