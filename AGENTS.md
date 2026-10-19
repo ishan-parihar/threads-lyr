@@ -31,6 +31,7 @@ uv run pytest -q        # parsers, client (FakeSession), server, CLI
 uv run ruff check . && uv run ruff format --check .
 ```
 
+*(Commands reviewed 2026-10-19: the section above still holds the commands that build and test this repo.)*
 ## Environment
 
 - `THREADS_TRACE_DIR` — optional trace log directory.
