@@ -6,6 +6,11 @@ import sys
 
 def main() -> None:
     """Handle tool interception or delegate to MCP server mode."""
+    if len(sys.argv) > 1 and sys.argv[1] in {"update", "upgrade"}:
+        from threads_mcp_server.cli_main import main as cli_main
+
+        cli_main()
+        return
     # ── Direct tool invocation: threads-lyr <tool_name> [args...] ────────
     if len(sys.argv) > 1 and not sys.argv[1].startswith("-"):
         # Set env var early before any imports.

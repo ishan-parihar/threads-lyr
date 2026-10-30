@@ -299,6 +299,10 @@ def show_help() -> None:
 
 def main() -> None:
     """Main application entry point."""
+    if raw_args and raw_args[0] in {"update", "upgrade"}:
+        from threads_mcp_server.updater import run_update
+
+        raise SystemExit(run_update(raw_args[1:], application="threads-lyr", package="threads-lyr"))
     config = get_config()
 
     configure_logging(

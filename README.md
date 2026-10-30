@@ -51,6 +51,12 @@ for a problem an anonymous fetch already solves.
 uv run threads-lyr --status          # anonymous — always valid
 ```
 
+`threads-lyr update --check` and `threads-lyr update` are available for
+package-manager-owned installs; `threads-lyr upgrade` is an alias. The project
+installer creates an editable checkout install, so its updater refuses to replace
+source files. Update that installation with `git -C <checkout> pull` followed by
+`cd <checkout> && uv sync`.
+
 ## Direct CLI tool execution
 
 ```bash
